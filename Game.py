@@ -87,5 +87,11 @@ while not game_over:
         # Update the display
         pygame.display.flip()
 
+# closing animation here
+for i in range(0, 100):
+    pygame.draw.rect(screen, green, [i % 10 * (size[0] // 10), i // 10 * (size[1] // 10), size[0] // 10,
+                                     size[1] // 10])
+    pygame.display.flip()
+    pygame.time.wait(10)
 pygame.quit()
 
